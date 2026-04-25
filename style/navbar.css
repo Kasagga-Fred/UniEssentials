@@ -1,0 +1,126 @@
+.announcement{
+    height: 50px;
+    background-color: var(--color-orange);
+    display: grid;
+    place-content: center;
+}
+
+.announcement-text{
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+.desktop-navbar{
+    background-color: var(--color-blue);
+}
+
+/* Logo */
+.logo-head{
+    margin: 0;
+    color: var(--color-orange);
+}
+.logo-text{
+}
+
+.logo-head{
+    font-size: 24px;
+    font-weight: 900;
+}
+.logo-text{
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+    color: var(--color-white);
+}
+
+
+.logo{
+    width: 164px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* nav-links */
+.nav-link, .link, .nav-button-links, .nav-button-link, .button-link{
+    color: var(--color-white);
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar-links{
+    width: 640px;
+    height: 60px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link{
+    width: 120px;
+    height: 30px;
+    border-bottom: var(--color-blue) solid;
+    display: grid;
+    place-content: center;
+    transition: all 1s ease-in-out;
+}
+.nav-link:hover{
+    border-bottom: var(--color-orange) solid;
+}
+
+.cta-buttons{
+    width: 250px;
+    height: 60px;
+}
+
+.nav-button-link{
+    display: grid;
+    place-content: center;
+    border-radius: 4px;
+    
+}
+
+.nav-button-links{
+    display: flex;
+    gap: 10px;
+}
+
+.filled{
+    width: 120px;
+    height: 40px;
+    background-color: var(--color-orange);
+}
+.unfilled{
+    width: 116px;
+    height: 36px;
+    border: var(--color-orange) solid;
+    transition: all .8s;
+}
+.unfilled:hover{
+    background-color: var(--color-orange);
+}
+
+.cta-buttons{
+    display: grid;
+    place-content: center;
+}
+
+.navbar-container{
+    display: flex;    
+    max-width: 1200;
+}
+.desktop-navbar{
+    display: grid;
+    place-content: center;
+    height: 64px;
+    position: sticky;
+    top: 0;
+}
+
+

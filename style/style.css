@@ -9,3 +9,7 @@
     --shadow-grey-dark: #6c757d;
     --shadow-grey-light: #adb5bd;
 }
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
