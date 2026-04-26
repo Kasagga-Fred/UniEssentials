@@ -22,20 +22,68 @@
             </div>
             <div class="navbar-links">
                 <ul class="nav-links">
-                    <li class="nav-link"><a href="#" class="link">Home</a></li>
-                    <li class="nav-link"><a href="#" class="link">About</a></li>
-                    <li class="nav-link"><a href="#" class="link">Cart</a></li>
-                    <li class="nav-link"><a href="#" class="link">Products</a></li>
-                    <li class="nav-link"><a href="#" class="link">Contact Us</a></li>
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
                 </ul>
             </div>
             <div class="cta-buttons">
                 <ul class="nav-button-links">
-                    <li class="nav-button-link filled"><a href="#" class="button-link">Register</a></li>
-                    <li class="nav-button-link unfilled"><a href="#" class="button-link">Login</a></li>
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
                 </ul>
             </div>
+            
+
         </div>
     </nav>
+    <!-- Mobile Navigation -->
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+        <!-- Mobile Toggle -->
+        <div class="toggle-mobile">
+            <h1 class="toggle-mobile-text">Menu</h1>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Links -->
+    <div class="mobile-wrapper">
+        <div class="mobile-links">
+        <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+
+
+    <!-- Mobile Toggle Button -->
+    <script>
+        const menuBtn = document.querySelector(".toggle-mobile-text");
+        const mobileNav = document.querySelector(".mobile-wrapper");
+
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+    </script>
+
 </body>
 </html>
