@@ -20,8 +20,6 @@
     margin: 0;
     color: var(--color-orange);
 }
-.logo-text{
-}
 
 .logo-head{
     font-size: 24px;
@@ -113,6 +111,7 @@
 
 .navbar-container{
     display: flex;    
+    align-items: flex-end;
     max-width: 1200;
 }
 .desktop-navbar{
