@@ -112,7 +112,7 @@
 .navbar-container{
     display: flex;    
     align-items: flex-end;
-    max-width: 1200;
+    max-width: 1200px;
 }
 .desktop-navbar{
     display: grid;
