@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | UniEssentials</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/products.css">
+</head>
+<body>
+    <!-- My announcement Offer -->
+    <div class="announcement">
+        <p class="announcement-text">FREE DELIVERY on all orders above <b>UGX 12,000</b> | Use code CAMPUS10 for <b>10%</b> off your first order</p>
+    </div>
+
+    <!-- NavBar Design Desktop -->
+    <nav class="desktop-navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart <span></span></a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+        <!-- Mobile Toggle -->
+        <div class="toggle-mobile">
+            <h1 class="toggle-mobile-text">Menu</h1>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Links -->
+    <div class="mobile-wrapper">
+        <div class="mobile-links">
+        <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Search Bar -->
+     <div class="search-wrapper">
+    <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search for pens, notebooks, or snacks...">
+</div>
+
+     <!-- New Arrivals -->
+ <section class="arrivals-section">
+    <div class="arrivals-container">
+        <div class="arrivals-header">
+            <h2 class="arrivals-headline">Just Dropped — New Arrivals This Week</h2>
+            <p class="arrivals-subtext">Fresh stock added every week. Be the first on your floor to get these.</p>
+        </div>
+
+        <div class="arrivals-grid">
+            <!-- Card 1 -->
+            <div class="arrival-card">
+                <span class="arrival-badge">NEW</span>
+                <div class="arrival-image">
+                    <img src="pen-set.png" alt="BIC Pen Set">
+                </div>
+                <div class="arrival-info">
+                    <h3 class="arrival-name">BIC 4-Colour Ballpoint Pen Set</h3>
+                    <div class="arrival-pricing">
+                        <span class="arrival-price">UGX 15,000</span>
+                    </div>
+                    <p class="arrival-desc">Classic multi-color pens perfect for organizing lecture notes and color-coding your study guides.</p>
+                    <ul class="arrival-props">
+                        <li>Long-lasting ink</li>
+                        <li>Retractable design</li>
+                        <li>4 colors in 1 pen</li>
+                    </ul>
+                    <div class="arrival-actions">
+                        <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+                        <button class="arrival-btn-outline">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="arrival-card">
+                <span class="arrival-badge">NEW</span>
+                <div class="arrival-image">
+                    <img src="keyboard.png" alt="HP Keyboard">
+                </div>
+                <div class="arrival-info">
+                    <h3 class="arrival-name">HP Wireless Keyboard</h3>
+                    <div class="arrival-pricing">
+                        <span class="arrival-price">UGX 95,000</span>
+                    </div>
+                    <p class="arrival-desc">Sleek, silent-touch wireless keyboard designed for comfortable typing during long essay writing sessions.</p>
+                    <ul class="arrival-props">
+                        <li>2.4GHz Wireless</li>
+                        <li>Long battery life</li>
+                        <li>Spill-resistant</li>
+                    </ul>
+                    <div class="arrival-actions">
+                        <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+                        <button class="arrival-btn-outline">Details</button>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Card 3 -->
+<div class="arrival-card">
+    <span class="arrival-badge">NEW</span>
+    <div class="arrival-image">
+        <img src="indomie-pack.png" alt="Indomie Variety Pack">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Instant Noodles Variety Pack (12-Pack)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 22,000</span>
+        </div>
+        <p class="arrival-desc">The ultimate survival kit for late-night study sessions. Includes a mix of Chicken and Onion flavors.</p>
+        <ul class="arrival-props">
+            <li>Ready in 3 minutes</li>
+            <li>Energy-boosting meal</li>
+            <li>Budget-friendly choice</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card 4 -->
+<div class="arrival-card">
+    <span class="arrival-badge">NEW</span>
+    <div class="arrival-image">
+        <img src="study-lamp.png" alt="Folding Study Lamp">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">LED Folding Rechargeable Study Lamp</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 45,000</span>
+        </div>
+        <p class="arrival-desc">Bright LED light with adjustable brightness levels. Perfect for reading without disturbing your roommate.</p>
+        <ul class="arrival-props">
+            <li>Rechargeable battery</li>
+            <li>Eye-protection LED</li>
+            <li>Compact & portable</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+                <div class="footer-sections footer-section-1">
+                <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            </div>
+            <div class="footer-sections footer-section-2">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link footer-nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link footer-nav-link"><a href="products.html" class="link">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                    <li class="nav-link footer-nav-link"><a href="register.html" class="link">Register</a></li>
+                    <li class="nav-link footer-nav-link"><a href="login.html" class="link">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">News Letter</h3>
+                <center>
+                    <form action="" class="newsletter-form">
+                    <input type="email" required placeholder="kasaggafred@gmail.com" class="newsletter">
+                    <button type="submit" class="nav-button-link unfilled buttons-design">Subscribe to our News Letter</button>
+                </form>
+                </center>
+
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; <span id="year"></span> UniEssentials</p>
+    </footer>
+
+    <!-- Mobile Toggle Button -->
+    <script>
+        const menuBtn = document.querySelector(".toggle-mobile-text");
+        const mobileNav = document.querySelector(".mobile-wrapper");
+
+        menuBtn.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+        });
+    </script>
+
+    <!-- Copyright Year -->
+    <script>
+        const year = new Date().getFullYear();
+
+        document.getElementById('year').textContent = year;
+    </script>
+
+    <!-- Search Bar and Cards being searched -->
+    <script>
+        function searchProduct() {
+    // 1. Get the text from the search input and make it lowercase
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    
+    // 2. Select all the arrival cards
+    let cards = document.querySelectorAll(".arrival-card");
+
+    cards.forEach(card => {
+        // 3. Find the product name within this specific card
+        let name = card.querySelector(".arrival-name").textContent.toLowerCase();
+
+        // 4. Compare name with input
+        if (name.includes(input)) {
+            // If it matches, show the card (restores original grid layout)
+            card.style.display = "";
+        } else {
+            // If no match, hide the card
+            card.style.display = "none";
+        }
+    });
+}
+
+    </script>
+
+    <!-- Cart Functionality -->
+    <script>
+    // 1. THE ADD TO CART LOGIC
+    function addToCart(button) {
+        let card = button.closest(".arrival-card");
+        let name = card.querySelector(".arrival-name").textContent;
+        let priceText = card.querySelector(".arrival-price").textContent;
+        let image = card.querySelector("img").src;
+
+        // Clean price string to number
+        let price = parseInt(priceText.replace(/[^0-9]/g, ""));
+
+        let product = {
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let existingItem = cart.find(item => item.name === product.name);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // NO ALERT HERE - just update the badge
+        updateCartBadge();
+    }
+
+    // 2. THE BADGE UPDATE LOGIC
+    function updateCartBadge() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let count = cart.reduce((total, item) => total + item.quantity, 0);
+        
+        let cartContainer = document.querySelector(".home-cart-link"); 
+        if (!cartContainer) return;
+
+        let badge = cartContainer.querySelector(".js-cart-badge");
+        
+        if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "js-cart-badge";
+            
+            // Inline styling as requested
+            Object.assign(badge.style, {
+                backgroundColor: "#ffa500", // Using your Orange palette
+                color: "white",
+                fontSize: "12px",
+                fontWeight: "bold",
+                padding: "2px 6px",
+                borderRadius: "50%",
+                marginLeft: "8px",
+                display: "inline-block"
+            });
+            
+            cartContainer.appendChild(badge);
+        }
+
+        badge.textContent = count;
+        badge.style.display = count > 0 ? "inline-block" : "none";
+    }
+
+    // Run on load to show existing items
+    window.onload = updateCartBadge;
+</script>
+
+
+</body>
+</html>
