@@ -1,5 +1,5 @@
-.login-main {
-    min-height: 50vh;
+.forgot-main {
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,33 +7,39 @@
     padding: 20px;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-.login-container {
+.forgot-container {
     background-color: var(--card);
     width: 100%;
     max-width: 450px;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 15px var(--shadow-grey-light);
     text-align: center;
     box-sizing: border-box;
 }
 
-.login-heading {
+.forgot-heading {
     color: var(--color-black);
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1rem 0;
     font-size: 1.8rem;
 }
 
-.login-form {
+.forgot-description {
+    color: var(--shadow-grey-dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+}
+
+.forgot-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.login-input {
+.forgot-input {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--shadow-grey-light);
@@ -43,11 +49,11 @@
     box-sizing: border-box;
 }
 
-.login-input:focus {
+.forgot-input:focus {
     border-color: var(--color-blue);
 }
 
-.login-buttons-design {
+.forgot-buttons-design {
     cursor: pointer;
     padding: 12px;
     border: none;
@@ -57,57 +63,39 @@
     box-sizing: border-box;
 }
 
-.login-nav-button-link.login-filled {
+.forgot-nav-button-link.forgot-filled {
     background-color: var(--color-blue);
     color: var(--color-white);
 }
 
-.login-buttons-design:hover {
+.forgot-buttons-design:hover {
     background-color: var(--color-orange);
     color: var(--color-white);
 }
 
-.login-register-link {
+.forgot-back-link {
     margin: 1.5rem 0 0 0;
     color: var(--shadow-grey-dark);
     font-size: 0.9rem;
 }
 
-.login-link {
+.forgot-link {
     color: var(--color-blue);
     text-decoration: none;
     font-weight: bold;
 }
 
-.login-link:hover {
-    text-decoration: underline;
-}
-.login-forgot-container {
-    text-align: right;
-    margin-top: -5px; /* Pulls it closer to the password input */
-}
-
-.login-forgot-link {
-    color: var(--shadow-grey-dark);
-    font-size: 0.85rem;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.login-forgot-link:hover {
-    color: var(--color-blue);
+.forgot-link:hover {
     text-decoration: underline;
 }
 
-
-/* Responsive adjustment */
 @media (max-width: 480px) {
-    .login-container {
+    .forgot-container {
         padding: 1.5rem;
         box-shadow: none;
     }
     
-    .login-heading {
+    .forgot-heading {
         font-size: 1.5rem;
     }
 }
