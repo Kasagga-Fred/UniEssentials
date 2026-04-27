@@ -13,6 +13,7 @@
 
 .desktop-navbar{
     background-color: var(--color-blue);
+    z-index: 1000;
 }
 
 /* Logo */
@@ -136,6 +137,7 @@
         display: block;
         height: 64px;
         position: sticky;
+        z-index: 1000;
         top: 0;
     }
     .navbar-mobile-container{
