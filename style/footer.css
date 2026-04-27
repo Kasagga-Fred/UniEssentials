@@ -62,3 +62,14 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
+
+.footer-tagline{
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+#year{
+    color: var(--color-orange);
+}

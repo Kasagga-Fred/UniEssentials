@@ -112,6 +112,7 @@
 
             </div>
         </div>
+        <p class="footer-tagline">&copy; <span id="year"></span> UniEssentials</p>
     </footer>
 
     <!-- Mobile Toggle Button -->
@@ -122,6 +123,13 @@
         menuBtn.addEventListener('click', () => {
             mobileNav.classList.toggle('show');
         });
+    </script>
+
+    <!-- Copyright Year -->
+    <script>
+        const year = new Date().getFullYear();
+
+        document.getElementById('year').textContent = year;
     </script>
 
 </body>
