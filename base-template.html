@@ -25,7 +25,7 @@
                 <ul class="nav-links">
                     <li class="nav-link"><a href="index.html" class="link">Home</a></li>
                     <li class="nav-link"><a href="about.html" class="link">About</a></li>
-                    <li class="nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
                     <li class="nav-link"><a href="products.html" class="link">Products</a></li>
                     <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
                 </ul>
@@ -60,7 +60,7 @@
                 <ul class="nav-links">
                     <li class="nav-link"><a href="index.html" class="link">Home</a></li>
                     <li class="nav-link"><a href="about.html" class="link">About</a></li>
-                    <li class="nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
                     <li class="nav-link"><a href="products.html" class="link">Products</a></li>
                     <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
                 </ul>
@@ -89,7 +89,7 @@
                 <ul class="footer-links">
                     <li class="nav-link footer-nav-link"><a href="index.html" class="link">Home</a></li>
                     <li class="nav-link footer-nav-link"><a href="about.html" class="link">About</a></li>
-                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link">Cart</a></li>
+                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
                     <li class="nav-link footer-nav-link"><a href="products.html" class="link">Products</a></li>
                 </ul>
             </div>
@@ -131,6 +131,77 @@
 
         document.getElementById('year').textContent = year;
     </script>
+
+    <!-- Cart Functionality -->
+    <script>
+    // 1. THE ADD TO CART LOGIC
+    function addToCart(button) {
+        let card = button.closest(".arrival-card");
+        let name = card.querySelector(".arrival-name").textContent;
+        let priceText = card.querySelector(".arrival-price").textContent;
+        let image = card.querySelector("img").src;
+
+        // Clean price string to number
+        let price = parseInt(priceText.replace(/[^0-9]/g, ""));
+
+        let product = {
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let existingItem = cart.find(item => item.name === product.name);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push(product);
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // NO ALERT HERE - just update the badge
+        updateCartBadge();
+    }
+
+    // 2. THE BADGE UPDATE LOGIC
+    function updateCartBadge() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let count = cart.reduce((total, item) => total + item.quantity, 0);
+        
+        let cartContainer = document.querySelector(".home-cart-link"); 
+        if (!cartContainer) return;
+
+        let badge = cartContainer.querySelector(".js-cart-badge");
+        
+        if (!badge) {
+            badge = document.createElement("span");
+            badge.className = "js-cart-badge";
+            
+            // Inline styling as requested
+            Object.assign(badge.style, {
+                backgroundColor: "#ffa500", // Using your Orange palette
+                color: "white",
+                fontSize: "12px",
+                fontWeight: "bold",
+                padding: "2px 6px",
+                borderRadius: "50%",
+                marginLeft: "8px",
+                display: "inline-block"
+            });
+            
+            cartContainer.appendChild(badge);
+        }
+
+        badge.textContent = count;
+        badge.style.display = count > 0 ? "inline-block" : "none";
+    }
+
+    // Run on load to show existing items
+    window.onload = updateCartBadge;
+</script>
 
 </body>
 </html>
