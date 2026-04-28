@@ -98,7 +98,7 @@ function displayCart() {
     if (cart.length === 0) {
         container.innerHTML = `<div style="text-align:center; padding: 40px;">
             <p>Your cart is empty!</p>
-            <a href="index.html" style="color: var(--color-blue); font-weight:bold;">Go back to Shop</a>
+            <a href="products.html" style="color: var(--color-blue); font-weight:bold;">Go back to Shop</a>
         </div>`;
         updateTotals(0);
         return;
