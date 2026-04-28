@@ -213,3 +213,76 @@
         font-size: 0.9rem;
     }
 }
+
+
+/* Pagination Styles */
+.pagination-section {
+    width: 100%;
+    margin: 40px 0;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pagination-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents breaking into new lines */
+    align-items: center;
+    gap: 6px; /* Tight gap for 9 items */
+}
+
+.pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--shadow-grey-light);
+    border-radius: 6px;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.pagination-link svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--shadow-grey-dark);
+}
+
+.pagination-link:hover {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+/* Active State using Orange */
+.pagination-link.active {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 600px) {
+    .pagination-container {
+        gap: 4px;
+    }
+    
+    .pagination-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    /* Hide middle pages on small phones to keep it linear */
+    .pagination-link:nth-child(5),
+    .pagination-link:nth-child(6),
+    .pagination-link:nth-child(7) {
+        display: none;
+    }
+}
