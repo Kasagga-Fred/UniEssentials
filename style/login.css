@@ -84,7 +84,7 @@
 }
 .login-forgot-container {
     text-align: right;
-    margin-top: -5px; /* Pulls it closer to the password input */
+    margin-top: -5px; 
 }
 
 .login-forgot-link {

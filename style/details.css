@@ -42,7 +42,7 @@
     color: var(--shadow-grey-dark);
 }
 
-/* FEATURES TITLE (optional if you add one later) */
+/* FEATURES TITLE */
 .details-container h3 {
     color: var(--color-black);
     margin-top: 10px;

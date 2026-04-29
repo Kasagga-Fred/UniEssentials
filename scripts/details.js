@@ -1,3 +1,4 @@
+// This script retrieves the selected product's details from localStorage and populates the product details page with the relevant information such as image, name, price, description, and features.
 const product = JSON.parse(localStorage.getItem("selectedProduct"));
 
 document.getElementById("d-image").src = product.image;

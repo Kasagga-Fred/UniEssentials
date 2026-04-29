@@ -183,7 +183,7 @@
     padding: 12px 20px 12px 45px; /* Extra left padding for the icon */
     font-size: 1rem;
     border: 2px solid var(--shadow-grey-light);
-    border-radius: 25px; /* Rounded pill shape */
+    border-radius: 25px; 
     background-color: var(--color-white);
     color: var(--color-black);
     outline: none;

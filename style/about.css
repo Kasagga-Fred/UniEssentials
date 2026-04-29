@@ -1,4 +1,3 @@
-/* Local resets and typography */
 .about-main {
     color: var(--color-black);
     line-height: 1.6;
@@ -15,10 +14,9 @@
     padding: 0 20px;
 }
 
-/* 8.1 Hero Section */
 .about-hero {
     height: 80vh;
-    background: url('/images/colorful-paper-bags-placed-table.jpg') center/cover no-repeat; /* Replace with your image */
+    background: url('/images/colorful-paper-bags-placed-table.jpg') center/cover no-repeat; 
     background-color: var(--color-blue); /* Fallback */
     position: relative;
     color: var(--color-white);
@@ -47,7 +45,6 @@
     margin: 0 auto;
 }
 
-/* 8.5 Stats Strip */
 .about-stats-strip {
     background: var(--color-blue);
     color: var(--color-white);
@@ -66,7 +63,6 @@
     font-size: 1.8rem;
 }
 
-/* 8.2 Brand Story */
 .about-story {
     padding: 5rem 0;
     background: var(--color-white);
@@ -85,7 +81,6 @@
     font-size: 1.1rem;
 }
 
-/* 8.3 Values */
 .about-values {
     padding: 5rem 0;
     background: var(--card);
@@ -114,7 +109,6 @@
 
 .about-value-card h4 { color: var(--color-orange); margin-top: 0; }
 
-/* 8.4 Team Section */
 .about-team {
     padding: 5rem 0;
 }

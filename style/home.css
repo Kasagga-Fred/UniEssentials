@@ -16,7 +16,7 @@
 }
 
 .home-hero-content {
-    max-width: 750px; /* Slightly wider for better centering aesthetics */
+    max-width: 750px; /* Slightly wider for better centering */
     color: #ffffff;
     text-align: center; /* Centers text inside the block */
     display: flex;
@@ -70,7 +70,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .home-btn-outline:hover {
-    background-color: var(--color-orange); /* Your --color-orange */
+    background-color: var(--color-orange);
     color: var(--color-white);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .home-container-small {
-    max-width: 1024px; /* Per your requirement */
+    max-width: 1024px;
     margin: 0 auto;    /* Centers the container */
     padding: 0 20px;
     box-sizing: border-box;

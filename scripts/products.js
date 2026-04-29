@@ -1,3 +1,5 @@
+// This file contains the product data for the Student Essentials Store. Each product is represented as an object with properties such as id, name, price, image, description, expanded description, and features. This data can be used to dynamically generate product listings on the website.
+
 const products = [
 {
     id: 1,
