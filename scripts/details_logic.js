@@ -4,5 +4,5 @@ function openDetails(id) {
 
     localStorage.setItem("selectedProduct", JSON.stringify(product));
 
-    window.location.href = "/details.html";
+    window.location.href = "details.html";
 }
